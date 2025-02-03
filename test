@@ -1,0 +1,9 @@
+<h1>Liste des Produits</h1>
+<ul>
+<?php if(!empty($products)) { ?>
+    <h3><?=$products?></h3>
+    <?php foreach($products as $product) { ?>
+        <li><?= htmlspecialchars($product['nom']); ?> - <?= htmlspecialchars($product['produit']); ?> </li>
+    <?php } ?>
+<?php } ?>
+</ul>
